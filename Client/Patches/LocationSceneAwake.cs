@@ -39,7 +39,7 @@ internal class LocationSceneAwakePatch : ModulePatch
             }
         }
 
-        if (localCopy.Count == 2 && exfilToCopy != null)
+        if (localCopy.Count == 2 && exfilToCopy != null && thisIsActuallyLabyrinth)
         {
             var newExfil = LocationScene.Instantiate(exfilToCopy.gameObject);
             newExfil.transform.SetParent(exfilToCopy.transform.parent, true);
