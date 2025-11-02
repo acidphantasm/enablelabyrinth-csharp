@@ -54,7 +54,7 @@ internal class LocationSceneAwakePatch : ModulePatch
             newExfil.SetActive(true);
             
             var scavComponent = newExfil.AddComponent<ScavExfiltrationPoint>();
-            scavComponent.Id = new MongoID();
+            scavComponent.Id = "690704dcfdb5f8595e3cb815";
             scavComponent.EligibleIds = new List<string>();
             scavComponent.Requirements = new ExfiltrationRequirement[] {};
             scavComponent.CharismaLevel = 0;
@@ -64,7 +64,7 @@ internal class LocationSceneAwakePatch : ModulePatch
             scavComponent.Settings.Chance = 100;
             scavComponent.Settings.EntryPoints = "Factory";
             scavComponent.Settings.ExfiltrationTime = 15;
-            scavComponent.Settings.Id = new MongoID();
+            scavComponent.Settings.Id = "690704dcfdb5f8595e3cb815";
             scavComponent.Settings.MinTime = 0;
             scavComponent.Settings.MaxTime = 0;
             scavComponent.Settings.PlayersCount = 0;
