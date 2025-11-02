@@ -57,7 +57,7 @@ public class DynamicMapsServer(
         var labyrinthBase = databaseService.GetLocations().Labyrinth.Base;
         labyrinthBase.AccessKeys = [];
         labyrinthBase.AccessKeysPvE = [];
-        labyrinthBase.IconY = 345f;
+        labyrinthBase.IconY = 350f;
         labyrinthBase.Enabled = true;
         labyrinthBase.DisabledForScav = false;
         labyrinthBase.ForceOnlineRaidInPVE = false;
