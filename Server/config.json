@@ -1,0 +1,9 @@
+﻿{
+  "ChangePmcExfilTimers": true,
+  "PrimaryPmcExfilTimer": {
+    "ExfiltrationTime": 15.0,
+    "ExfiltrationType": "Individual",
+    "ElapsedSecondsBeforeAvailable": 600.0
+  },
+  "GuaranteeSecretExfilKey": true
+}

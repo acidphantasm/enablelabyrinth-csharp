@@ -43,7 +43,6 @@ internal class LocationSceneAwakePatch : ModulePatch
         {
             var newExfil = LocationScene.Instantiate(exfilToCopy.gameObject);
             newExfil.transform.SetParent(exfilToCopy.transform.parent, true);
-            newExfil.name = "exit (2)";
                 
             var exfilPointComponent = newExfil.GetComponent<ExfiltrationPoint>();
             if (exfilPointComponent != null)
@@ -54,6 +53,8 @@ internal class LocationSceneAwakePatch : ModulePatch
             newExfil.SetActive(true);
             
             var scavComponent = newExfil.AddComponent<ScavExfiltrationPoint>();
+            newExfil.name = "The Way Up (scav)";
+            scavComponent.name = "The Way Up (scav)";
             scavComponent.Id = "690704dcfdb5f8595e3cb815";
             scavComponent.EligibleIds = new List<string>();
             scavComponent.Requirements = new ExfiltrationRequirement[] {};
@@ -62,13 +63,13 @@ internal class LocationSceneAwakePatch : ModulePatch
             scavComponent.enabled = true;
             scavComponent.Settings.ExfiltrationType = EExfiltrationType.Individual;
             scavComponent.Settings.Chance = 100;
-            scavComponent.Settings.EntryPoints = "Factory";
+            scavComponent.Settings.EntryPoints = "";
             scavComponent.Settings.ExfiltrationTime = 15;
-            scavComponent.Settings.Id = "690704dcfdb5f8595e3cb815";
+            scavComponent.Settings.Id = "";
             scavComponent.Settings.MinTime = 0;
             scavComponent.Settings.MaxTime = 0;
             scavComponent.Settings.PlayersCount = 0;
-            scavComponent.Settings.Name = "custom_labyrinth_scav_exfil";
+            scavComponent.Settings.Name = "The Way Up (scav)";
             scavComponent.Settings.StartTime = 0;
 
             localCopy.Add(scavComponent);
